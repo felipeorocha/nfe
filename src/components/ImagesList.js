@@ -22,14 +22,12 @@ export default ImagesList;
 //     <div className="image-list">
 //       {
 //         props.imagesList.map(item =>
-
 //           <ImageCard
 //             key={item.id}
 //             image={item}
 //             className="ui medium rounded image"
 //             alt={item}
 //           />
-
 //         )
 //       }
 //     </div>
