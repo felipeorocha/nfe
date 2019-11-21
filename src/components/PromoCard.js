@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import { Button } from './Button';
 import './PromoCard.css';
 
 const PromoCard = ({ title, added, content, price , addFunc, id }) => {

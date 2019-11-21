@@ -6,4 +6,13 @@ const Button = ({ className, children, addFunc, id, content, title, price }) => 
   );
 }
 
-export default Button;
+const SecondaryButton = ({ className, children, addFunc, id, content, title, price }) => {
+  return (
+  <button className={className}>{children}</button>
+  );
+}
+
+export {
+  Button,
+  SecondaryButton
+}
