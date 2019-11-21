@@ -1,0 +1,5 @@
+.load-spinner-container {
+  height: 50rem;
+  display: flex;
+  align-items: center;
+}

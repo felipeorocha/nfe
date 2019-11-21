@@ -1,0 +1,5 @@
+.promo-list-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}

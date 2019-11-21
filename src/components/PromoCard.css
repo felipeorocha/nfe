@@ -1,0 +1,13 @@
+.extra.content:after {
+  content: none !important;
+}
+
+.extra-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meta {
+  color: rgb(230, 28, 28) !important;
+}

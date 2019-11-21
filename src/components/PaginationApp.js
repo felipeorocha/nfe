@@ -1,10 +1,14 @@
 import React from 'react'
 import { Pagination } from 'semantic-ui-react'
 
-const PaginationApp = () => (
-  <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
-    <Pagination defaultActivePage={5} totalPages={10} />
-  </div>
-)
+const PaginationApp = ({ promosPerPage, totalPromos, onChange }) => {
+  const pages = totalPromos / promosPerPage;
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+      <Pagination onPageChange={onChange} defaultActivePage={5} totalPages={pages} />
+    </div>
+  );
+}
 
 export default PaginationApp;
