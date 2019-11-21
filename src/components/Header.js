@@ -9,7 +9,7 @@ const Header = props => {
       <Button className="ui vertical animated button header-item">
         <div className="hidden content">Shop</div>
         <div className="visible content">
-          <i aria-hidden="true" class="shop icon"></i>
+          <i aria-hidden="true" className="shop icon"></i>
         </div>
       </Button>
     </div>

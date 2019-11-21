@@ -1,29 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from './Button';
 import './PromoCard.css';
 
-class ImageCard extends Component {
-  componentDidMount() {
-  }
-
-  render() {
-    return(
-      <div className="ui card" style={{ margin: '20px' }}>
-        <div className="content">
-          <div className="header">{this.props.title}</div>
-          <div className="description">
-            {this.props.content}
-          </div>
-        </div>
-        <div className="extra content extra-content-container">
-          <div className="meta">R$ 00,09 per consult</div>
-          <Button className="ui primary button">
-            Buy
-          </Button>
+const PromoCard = ({ title, added, content, price , addFunc, id }) => {
+  return(
+    <div className="ui card" style={{ margin: '20px' }}>
+      <div className="content">
+        <div className="header">{title}</div>
+        <div className="description">
+          {content}
         </div>
       </div>
-    );
-  }
+      <div className="extra content extra-content-container">
+        <div className="meta">R$ {price} per consult</div>
+        <Button
+          className={added ? "ui disabled button" : "ui primary button"}
+          addFunc={addFunc}
+          id={id}
+          content={content}
+          title={title}
+          price={price}
+        >
+          Buy
+        </Button>
+      </div>
+    </div>
+  );
 }
 
-export default ImageCard;
+export default PromoCard;
