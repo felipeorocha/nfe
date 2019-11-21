@@ -3,6 +3,7 @@ import axios from 'axios';
 import PromoList from './PromoList';
 import PaginationApp from './PaginationApp';
 import Header from './Header';
+import { promotion } from '../actions';
 
 const App = () => {
   const [promos, setPromos] = useState([]);

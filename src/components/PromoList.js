@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PromoCard from './PromoCard';
 import Loader from './Loader';
 import './PromoList.css';
+import { connect } from 'react-redux';
+import { promotion } from '../actions';
 
 class PromoList extends Component {
   state = {
@@ -60,4 +62,10 @@ class PromoList extends Component {
 
 }
 
-export default PromoList;
+const mapStateToProps = state => {
+  return { promos: state.promo };
+}
+
+export default connect(mapStateToProps, {
+  promotion
+})(PromoList);
